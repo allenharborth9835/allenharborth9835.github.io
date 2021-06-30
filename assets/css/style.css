@@ -39,59 +39,54 @@ header nav ul li a{
     margin: 10px 15px;
     padding: 7px;
 }
-.main{
-    display:flex;
-    background-color: var(--secondary-color);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px 20px 20px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    width: 20000px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
-}
-.main p{
-    display: inline;
-    color: var(--primary-color);
-    padding: 10px 10px 10px 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.main img{
-    float: left;
-    margin-top: 20px;
-    border-radius: 80px;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.main p{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-.skills{
-    display: flex;
-    padding: 20px 150px 20px 50px;
-    background-color:var(--outer1-color) ;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-    border-radius: 15px;
-    color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
-}
 .container{
     display: flex;
-
+    flex-wrap: wrap;
+    width:100%;
+    width:0 auto;
 }
+.container >*{
+    margin: 20px;
+}
+.main{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    width: 80%;
+    flex:1;
+}
+.main p{
+    display:flex;
+    align-items: flex-start;
+    color: var(--primary-color);
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1;
+}
+.main img{
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    margin: 20px;
+}
+
+.skills{
+    display: flex;
+    background-color:var(--outer1-color) ;
+    border-radius: 15px;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    padding: 10px;
+    width:20%
+}
+
 section a{
     color:var(--outer3-color)
 }
-.contact{
+.contact > *{
     float: right;
     width: 30%;
 
@@ -102,4 +97,10 @@ body{
     padding:0;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:980px){
+    .main,.skills{
+        flex: 0 100%;
+        flex-direction: column;
+    }
 }
