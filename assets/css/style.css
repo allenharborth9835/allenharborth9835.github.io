@@ -1,0 +1,105 @@
+:root{
+    --primary-color: #2E3138;
+    --secondary-color: #6C6F7D;
+    --outer1-color: #CCC9E7;
+    --outer2-color: #856A5D;
+    --outer3-color: #60463B;
+
+}
+header{
+    position: sticky;
+    display: flex;
+    background-color: var(--primary-color);
+    top: 0;
+    padding: 10px 20px;
+}
+header h1{
+    font-weight: bold;
+    margin: 0;
+    color: var(--outer2-color);
+    font-size: 36px;
+    padding-top: 10px;
+}
+header a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--outer2-color)
+}
+header nav{
+    margin: 7px 0;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a{
+    margin: 10px 15px;
+    padding: 7px;
+}
+.main{
+    display:flex;
+    background-color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 20000px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+.main p{
+    display: inline;
+    color: var(--primary-color);
+    padding: 10px 10px 10px 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.main img{
+    float: left;
+    margin-top: 20px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main p{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.skills{
+    display: flex;
+    padding: 20px 150px 20px 50px;
+    background-color:var(--outer1-color) ;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+.container{
+    display: flex;
+
+}
+section a{
+    color:var(--outer3-color)
+}
+.contact{
+    float: right;
+    width: 30%;
+
+}
+body{
+    background-color: var(--outer2-color);
+    margin: 0;
+    padding:0;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
