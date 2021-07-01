@@ -2,8 +2,8 @@
     --primary-color: #2E3138;
     --secondary-color: #6C6F7D;
     --outer1-color: #CCC9E7;
-    --outer2-color: #856A5D;
-    --outer3-color: #60463B;
+    --outer2-color: #151c21;
+    --outer3-color: #FFD300;
 
 }
 header{
@@ -12,18 +12,19 @@ header{
     background-color: var(--primary-color);
     top: 0;
     padding: 10px 20px;
+    color: var(--outer1-color);
+    opacity: 0.8;
 }
 header h1{
     font-weight: bold;
     margin: 0;
-    color: var(--outer2-color);
     font-size: 36px;
     padding-top: 10px;
 }
 header a{
     font-weight: bold;
     text-decoration: none;
-    color: var(--outer2-color)
+    color: var(--secondary-color)
 }
 header nav{
     margin: 7px 0;
@@ -38,6 +39,12 @@ header nav ul{
 header nav ul li a{
     margin: 10px 15px;
     padding: 7px;
+}
+header nav ul li a:hover{
+    color:black;
+}
+.main-img{
+    width: 100%;
 }
 .container{
     display: flex;
@@ -86,10 +93,28 @@ header nav ul li a{
 section a{
     color:var(--outer3-color)
 }
-.contact > *{
-    float: right;
-    width: 30%;
-
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-link{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2E3138;
+    width:90%;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+.contact-link:hover{
+    
+}
+.contact-link img{
+    height: 75px;
+    width: 70px;
+    padding: 20px;
+    border-radius: 70px;
 }
 body{
     background-color: var(--outer2-color);
