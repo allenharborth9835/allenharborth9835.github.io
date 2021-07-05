@@ -1,3 +1,4 @@
+/* varibles for the websites colors*/
 :root{
     --primary-color: #2E3138;
     --secondary-color: #6C6F7D;
@@ -7,6 +8,7 @@
     --hoverlink: #7a6706;
 
 }
+/*style for the header*/
 header{
     position: sticky;
     display: flex;
@@ -22,6 +24,7 @@ header h1{
     margin: 0 0 0 20px;
     font-size: 36px;
     padding-top: 10px;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 header a{
     font-weight: bold;
@@ -45,6 +48,7 @@ header nav ul li a{
 header nav ul li a:hover{
     color:black;
 }
+/*main page and style for the bio sections*/
 .main-img{
     width: 100%;
 }
@@ -54,6 +58,7 @@ header nav ul li a:hover{
     width:100%;
     width:0 auto;
 }
+/*style for the main section*/
 .main{
     display:flex;
     flex-wrap: wrap;
@@ -79,7 +84,7 @@ header nav ul li a:hover{
     box-shadow: 0 0 10px rgba(0,0,0, 0.5);
     margin: 20px;
 }
-
+/*style for the skills section*/
 .skills{
     background-color:var(--outer1-color) ;
     border-radius: 15px;
@@ -94,6 +99,7 @@ header nav ul li a:hover{
     display:flex;
     flex-wrap: wrap;
 }
+/*style for the education section*/
 #education{
     width:30%;
     border-radius: 15px;
@@ -114,7 +120,7 @@ header nav ul li a:hover{
 #education p{
     color:var(--outer3-color);
 }
-
+/*style for the work history section*/
 #work-history{
     width:60%;
     border-radius: 15px;
@@ -135,13 +141,14 @@ header nav ul li a:hover{
 #work-history h3{
     color: var(--outer2-color);
 }
+/*style for the prtfolio page*/
 .projects{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width:100%;
     width:0 auto;
-    justify-content: space-around;
+    margin: 10px 0 10px 10px;
 }
 .proj{
     border-radius: 15px;
@@ -164,11 +171,13 @@ header nav ul li a:hover{
     margin:0 20px 20px 20px;
 }
 .primary{
-    width: 90%;
+
+    width: 97%;
 }
 .secondary{
-    width: 45%;
+    width: 48%;
 }
+/*style for the contact me page*/
 .contact-cont{
     display: flex;
     flex-wrap: wrap;
@@ -207,6 +216,7 @@ header nav ul li a:hover{
 .contact-link a:hover{
     color:var(--hoverlink)
 }
+/*style for the contact me form*/
 .contact-me{
     margin-top: 20px;
     width:30%;
@@ -236,9 +246,11 @@ header nav ul li a:hover{
     border-radius: 15%;
     height: 25px;
 }
+/*padding to make the footer be at the bottom*/
 .padding{
     min-height: calc(40vh);
 }
+/*style for the whole page*/
 body{
     background-color: var(--outer2-color);
     margin: 0;
@@ -246,6 +258,7 @@ body{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*style for the footer*/
 footer{
     width: 100%;
     height:60px;
@@ -256,6 +269,7 @@ footer{
 footer  h2{
     color: aliceblue;
 }
+/*style for different screen sizes*/
 @media screen and (max-width:1300px) {
     #education{
         width:100%
