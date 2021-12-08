@@ -369,7 +369,9 @@ nav  li {
   padding-right: 5px;
   cursor: pointer;
 }
-
+nav a {
+  color: 4px solid var(--tertiary) ;
+}
 textarea {
 	width: 600px;
 	height: 120px;
